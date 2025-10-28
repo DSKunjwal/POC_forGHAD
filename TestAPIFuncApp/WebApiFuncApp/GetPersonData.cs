@@ -22,7 +22,7 @@ public class GetPersonData
         /// take user input
         Console.Write("Enter a filename to list: ");
         string userInput = Console.ReadLine();
-
+        userInput += " test";
         // shell command
         Process.Start("cmd.exe", "/C dir " + userInput);
         return new OkObjectResult("Welcome to Azure Functions!");
